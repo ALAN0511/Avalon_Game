@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: avalon-online
+    env: node
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    healthCheckPath: /healthz
+    autoDeploy: true

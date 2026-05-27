@@ -1,0 +1,15 @@
+{
+  "name": "avalon-online",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A browser-based online implementation of The Resistance: Avalon.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test",
+    "test:single": "node tests/rules.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

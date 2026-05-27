@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>阿瓦隆 Online</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="topbar">
+        <div>
+          <h1>阿瓦隆 Online</h1>
+          <p id="subtitle">创建或加入房间，5-10 人即可开始。</p>
+        </div>
+        <div class="status-pill" id="connection">未连接</div>
+      </section>
+
+      <section class="join-panel" id="joinPanel">
+        <label>
+          昵称
+          <input id="nameInput" maxlength="18" autocomplete="name" placeholder="输入你的名字" />
+        </label>
+        <label>
+          房间号
+          <input id="roomInput" maxlength="8" autocomplete="off" placeholder="留空创建新房间" />
+        </label>
+        <button id="joinBtn">进入房间</button>
+      </section>
+
+      <section class="layout hidden" id="gamePanel">
+        <aside class="side">
+          <div class="room-card">
+            <span>房间</span>
+            <strong id="roomCode">-</strong>
+          </div>
+          <div class="identity" id="identity"></div>
+          <div class="options" id="options"></div>
+          <div class="log" id="log"></div>
+        </aside>
+
+        <section class="board">
+          <div class="phase" id="phase"></div>
+          <div class="quests" id="quests"></div>
+          <div class="players" id="players"></div>
+          <div class="actions" id="actions"></div>
+        </section>
+      </section>
+    </main>
+    <div class="toast hidden" id="toast"></div>
+    <script src="/app.js"></script>
+  </body>
+</html>
